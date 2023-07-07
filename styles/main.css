@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.fondo {
+    background: url("../img/fondo.gif") fixed center/cover;
+    
+}
+
+.img-index {
+    height: calc(100vh - 73px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-index img {
+    width:500px;
+    height:500px;
+}
+
+@media screen and (max-width: 992px) {
+    .img-index img {
+        width:250px;
+        height:250px;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto;
+
+    grid-template-areas: 
+        'header'
+        'info';
+
+    margin-bottom: 100px;
+}
+
+.container__encabezado {
+    grid-area: header;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.encabezado {
+    height: 100px;
+    width: 100px;
+}
+
+.container__info {
+    grid-area: info;
+
+    margin-right: -15px;
+    margin-left: -15px;
+
+    font-family: Montserrat, sans-serif;
+    color: #1D1D1B;
+    font-size: 18px;
+}
+
+.tittle {
+    font-family: Montserrat black, sans-serif;
+    font-style: italic;
+    color: #3C3C3B;
+    font-size: 50px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+
+    justify-content: center;
+}
+
+.info__banda {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+.info__integrantes {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .tittle {
+        font-size: 29px;
+    }
+    .info {
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .info__banda{
+        width: 100%;
+        text-align: center;
+    }
+    .info__integrantes {
+        width: 100%;
+    }
+    .info__integrantes h3{
+        font-size: 25px;
+    }
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.bottom-space {
+    margin-bottom: 1rem!important;
+}
+
+.shows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 1px;
+}
+
+.shows__fechas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fecha {
+    width: 200px;
+    margin: 0;
+}
+
+.lugar {
+    width: 300px;
+    margin: 0;
+}
+
+.tickets {
+    width: 200px;
+    margin: 0;
+}
+
+.shows__border {
+    border-top: solid 1px;
+}
+
+@media screen and (max-width: 992px) {
+    .shows__fechas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .fecha, .lugar, .tickets {
+        margin: 0;
+    }
+}
+
+
+.position-fixed {
+    position: fixed!important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #3C3C3B;
+}
+
+.navegador {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.tamañoRedes {
+    width:30px;
+    height:30px;
+}
+
+.tipografíaBotones {
+    font-family: Montserrat medium, sans-serif;
+    font-size: 14pt;
+}
+
+.color-blanco {
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.color-blanco:hover{
+    color: #791710;
+}
+
+.colorApretado {
+    color: #BD1818;
+}
+
