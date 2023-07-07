@@ -172,6 +172,9 @@ a {
         align-items: center;
         text-align: center;
     }
+    .shows {
+        font-size: 15px;
+    }
     .fecha, .lugar, .tickets {
         margin: 0;
     }
