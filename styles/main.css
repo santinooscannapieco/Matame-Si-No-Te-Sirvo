@@ -28,16 +28,6 @@ a {
     height:500px;
 }
 
-@media screen and (max-width: 992px) {
-    .index {
-        height: calc(100vh - 50.75px);
-    }
-    .img-index {
-        width:250px;
-        height:250px;
-    }
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -106,27 +96,6 @@ a {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 992px) {
-    .tittle {
-        font-size: 29px;
-    }
-    .info {
-        flex-direction: column;
-        font-size: 15px;
-        align-items: center;
-    }
-    .info__banda{
-        width: 100%;
-        text-align: center;
-    }
-    .info__integrantes {
-        width: 100%;
-    }
-    .info__integrantes h3{
-        font-size: 25px;
-    }
-}
-
 .negrita {
     font-weight: bold;
 }
@@ -169,15 +138,55 @@ a {
     border-top: solid 1px;
 }
 
+.info__videos {
+    text-align: center;
+    margin: auto;
+}
+
+.videos {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    width: 350px;
+    height: 197px;
+}
+
 @media screen and (max-width: 992px) {
+    .index {
+        height: calc(100vh - 50.75px);
+    }
+    .img-index {
+        width:250px;
+        height:250px;
+    }
+
+    .tittle {
+        font-size: 29px;
+    }
+    .info {
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center;
+    }
+    .info__banda{
+        width: 100%;
+        text-align: center;
+    }
+    .info__integrantes {
+        width: 100%;
+    }
+    .info__integrantes h3{
+        font-size: 25px;
+    }
+
+    .shows {
+        font-size: 15px;
+    }
     .shows__fechas {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-    .shows {
-        font-size: 15px;
     }
     .fecha, .lugar, .tickets {
         margin: 0;
