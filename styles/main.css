@@ -199,7 +199,7 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 5px;
+    padding: 10px 5px;
     background-color: #3C3C3B;
 }
 
@@ -210,9 +210,18 @@ a {
     align-items: center;
 }
 
-.redes {
+.redes__ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.redes__li {
+    height: 25px;
+
 }
 
 .navbar {
@@ -221,10 +230,6 @@ a {
 
 .navbar-toggler {
     padding: 10px;
-}
-
-.navbar-palabra {
-    color: white;
 }
 
 @media screen and (max-width: 992px) {
@@ -253,3 +258,75 @@ a {
     color: #BB1A1A;
 }
 
+/* MENU NUEVO */
+
+.nav__responsive-ul {
+    display: none;
+}
+
+.nav__ul {
+    padding: 10px;
+    background-color: #3C3C3B;
+}
+
+.nav__li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+#abrir-menu {
+    display: none;
+}
+
+
+.buttom-menu {
+    display: none;
+    color: white;
+    margin: 0 10px;
+}
+
+/* ----------------------- */
+@media screen and (max-width: 992px) {
+    .nav__ul {
+        display: none;
+    }
+    .nav__responsive-ul {
+        display: block;
+        list-style: none;
+        position: fixed;
+        bottom: -220px;
+        left: 0;
+        background: #3C3C3B;
+        width: 200px;
+        height: 176px;
+        padding: 0;
+    
+        /*
+        margin-bottom: 51px; PONERSELO al apretar en el menu
+        */
+    }
+    
+    .nav__responsive-li {
+        display: block;
+        text-align: center;
+        margin: 0 10px;
+        padding: 10px;
+        border-bottom: 1px solid;
+    }
+    
+    #abrir-menu:checked ~ .nav__responsive-ul {
+        bottom: 0;
+        margin-bottom: 45px;
+    
+    } 
+    
+    .buttom-menu {
+        display: block;
+        left: 0;
+    }
+}
