@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matame</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="shortcut icon" href="../img/favicon-logo-2023.png">
 </head>
@@ -48,46 +47,40 @@
     </div>
 
     <div class="position-fixed navegador">
-      <nav class="navbar navbar-expand-lg tipografíaBotones">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-palabra">MENU</span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item">
-                <a class="nav-link color-blanco" href="shows.html">SHOWS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-blanco" href="bio.html">BIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-blanco" href="discografía.html">DISCOGRAFÍA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-blanco" href="videos.html">VIDEOS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav class="nav tipografíaBotones">
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="shows.html" class="nav__link">SHOWS</a></li>
+            <li class="nav__li"><a href="bio.html" class="nav__link">BIO</a></li>
+            <li class="nav__li"><a href="discografía.html" class="nav__link">DISCOGRAFIA</a></li>
+            <li class="nav__li"><a href="videos.html" class="nav__link">VIDEOS</a></li>
+        </ul>
+        <input type="checkbox" name="" id="abrir-menu">
+        <label for="abrir-menu" class="buttom-menu">MENU</label>
+        <ul class="nav__responsive-ul">
+            <li class="nav__responsive-li"><a href="shows.html" class="nav__link color-blanco">SHOWS</a></li>
+            <li class="nav__responsive-li"><a href="bio.html" class="nav__link color-blanco">BIO</a></li>
+            <li class="nav__responsive-li"><a href="discografía.html" class="nav__link color-blanco">DISCOGRAFIA</a></li>
+            <li class="nav__responsive-li"><a href="videos.html" class="nav__link color-blanco">VIDEOS</a></li>
+        </ul>
       </nav>
-      <ul class="redes">
-        <li>
+      
+      <ul class="redes__ul">
+        <li class="redes__li">
           <a href="">
             <img src="../img/spotify-blanco.png" alt="spotify" class="tamañoRedes">
           </a>
         </li>
-        <li>
+        <li class="redes__li">
           <a href="https://www.youtube.com/@matamesinotesirvo5664" target="_blank">
             <img src="../img/youtube-blanco.png" alt="youtube" class="tamañoRedes">
           </a>
         </li>
-        <li>
+        <li class="redes__li">
           <a href="https://www.instagram.com/matame.ok/" target="_blank">
             <img src="../img/instagram-blanco.png" alt="instagram" class="tamañoRedes">
           </a>
         </li>
-        <li>
+        <li class="redes__li">
           <a href="https://www.facebook.com/matamesinotesirvo.banda" target="_blank" >
             <img src="../img/facebook-blanco.png" alt="facebook" class="tamañoRedes">
           </a>
@@ -95,6 +88,5 @@
       </ul>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

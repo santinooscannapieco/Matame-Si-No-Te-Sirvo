@@ -132,7 +132,7 @@ a {
 }
 
 .btn-danger {
-    --bs-btn-bg: #BB1A1A;
+    color: #BB1A1A;
 }
 
 .shows__border {
@@ -199,7 +199,7 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px 5px;
+    padding: 5px 5px 10px 5px;
     background-color: #3C3C3B;
 }
 
@@ -237,6 +237,9 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+    .position-fixed {
+        padding: 10px 5px;
     }
 }
 
