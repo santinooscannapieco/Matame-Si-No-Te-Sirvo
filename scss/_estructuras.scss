@@ -1,2 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto;
+
+    grid-template-areas: 
+        'header'
+        'info';
+
+    margin-bottom: 100px;
+
+    .container__encabezado {
+        grid-area: header;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .encabezado {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .container__info {
+        grid-area: info;
+
+        margin-right: 15px;
+        margin-left: 15px;
+    
+        font-family: Montserrat, sans-serif;
+        color: #1D1D1B;
+        font-size: 18px;
+        
+        .tittle {
+            font-family: Montserrat black, sans-serif;
+            font-style: italic;
+            color: #3C3C3B;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        @media screen and (max-width: 992px) {
+            .tittle {
+                font-size: 29px;
+            }
+        }
+        .texto {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 @import "./estructuras/index";
+@import "./estructuras/bio";
 @import "./estructuras/nav";

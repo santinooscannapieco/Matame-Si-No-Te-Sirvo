@@ -1,6 +1,46 @@
+@each $size in xs, sm, md, lg {
+    @if $size == xs {
+        @media screen and (max-width: 768px) {
+            @for $i from 1 through 12 {
+                $tamaño-col: calc(100% / 12) * $i;
+                .col-#{$size}-#{$i} {
+                    max-width: $tamaño-col;
+                }
+            }
+        }
+    }@else if $size == sm {
+        @media screen and (min-width: 768px) {
+            @for $i from 1 through 12 {
+                $tamaño-col: calc(100% / 12) * $i;
+                .col-#{$size}-#{$i} {
+                    max-width: $tamaño-col;
+                }
+            }
+        }
+    }@else if $size == md {
+        @media screen and (min-width: 992px) {
+            @for $i from 1 through 12 {
+                $tamaño-col: calc(100% / 12) * $i;
+                .col-#{$size}-#{$i} {
+                    max-width: $tamaño-col;
+                }
+            }
+        }
+    }@else{
+        @media screen and (min-width: 1200px) {
+            @for $i from 1 through 12 {
+                $tamaño-col: calc(100% / 12) * $i;
+                .col-#{$size}-#{$i} {
+                    max-width: $tamaño-col;
+                }
+            }
+        }
+    }
+}
+
 @for $i from 1 through 12 {
     $tamaño-col: calc(100% / 12) * $i;
     .col-#{$i} {
-        width: $tamaño-col;
+        max-width: $tamaño-col;
     }
 }
