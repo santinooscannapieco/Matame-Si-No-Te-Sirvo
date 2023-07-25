@@ -1,0 +1,6 @@
+@for $i from 1 through 12 {
+    $tamaño-col: (100% / 12) * $i;
+    .col-#{$i} {
+        width: $tamaño-col;
+    }
+}

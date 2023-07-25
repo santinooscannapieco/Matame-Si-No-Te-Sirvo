@@ -1,0 +1,19 @@
+{
+  "name": "matame-si-no-te-sirvo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santinooscannapieco/Matame-Si-No-Te-Sirvo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santinooscannapieco/Matame-Si-No-Te-Sirvo/issues"
+  },
+  "homepage": "https://github.com/santinooscannapieco/Matame-Si-No-Te-Sirvo#readme"
+}
