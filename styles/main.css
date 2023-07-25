@@ -194,16 +194,14 @@ a {
     }
 }
 
-.position-fixed {
-    position: fixed!important;
+.navegador {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 5px 5px 10px 5px;
     background-color: #3C3C3B;
-}
 
-.navegador {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,8 +235,6 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-    .position-fixed {
         padding: 10px 5px;
     }
 }
@@ -248,17 +244,9 @@ a {
     margin-left: 5px;
 }
 
-.tipografíaBotones {
+.nav {
     font-family: Montserrat medium, sans-serif;
     font-size: 14pt;
-}
-
-.color-blanco {
-    color: white;
-}
-
-.color-blanco:hover{
-    color: #BB1A1A;
 }
 
 /* MENU NUEVO */
@@ -281,6 +269,9 @@ a {
     text-decoration: none;
     color: white;
 }
+.nav__link:hover {
+    color: #BB1A1A;
+}
 
 #abrir-menu {
     display: none;
@@ -289,8 +280,6 @@ a {
 
 .buttom-menu {
     display: none;
-    color: white;
-    margin: 0 10px;
 }
 
 /* ----------------------- */
@@ -331,5 +320,7 @@ a {
     .buttom-menu {
         display: block;
         left: 0;
+        color: white;
+        margin: 0 10px;
     }
 }
