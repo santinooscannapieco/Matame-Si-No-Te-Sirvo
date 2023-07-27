@@ -1,0 +1,32 @@
+.info__videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    text-align: center;
+    .videos {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 350px;
+        height: 197px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .info__videos {
+        .videos {
+            width: 300px;
+            height: 150px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .info__videos {
+        .videos {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}

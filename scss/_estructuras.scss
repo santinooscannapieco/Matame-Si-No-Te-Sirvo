@@ -43,9 +43,24 @@
             text-align: center;
             margin-bottom: 1rem;
         }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+
         @media screen and (max-width: 992px) {
             .tittle {
                 font-size: 29px;
+            }
+            .info {
+                flex-direction: column;
+                font-size: 15px;
+                align-items: center;
+
             }
         }
         .texto {
@@ -54,6 +69,9 @@
     }
 }
 
+
 @import "./estructuras/index";
 @import "./estructuras/bio";
+@import "./estructuras/shows";
+@import "./estructuras/videos";
 @import "./estructuras/nav";

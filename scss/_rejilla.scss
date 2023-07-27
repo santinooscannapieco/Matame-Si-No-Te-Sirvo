@@ -4,7 +4,7 @@
             @for $i from 1 through 12 {
                 $tamaño-col: calc(100% / 12) * $i;
                 .col-#{$size}-#{$i} {
-                    max-width: $tamaño-col;
+                    width: $tamaño-col;
                 }
             }
         }
@@ -13,7 +13,7 @@
             @for $i from 1 through 12 {
                 $tamaño-col: calc(100% / 12) * $i;
                 .col-#{$size}-#{$i} {
-                    max-width: $tamaño-col;
+                    width: $tamaño-col;
                 }
             }
         }
@@ -22,7 +22,7 @@
             @for $i from 1 through 12 {
                 $tamaño-col: calc(100% / 12) * $i;
                 .col-#{$size}-#{$i} {
-                    max-width: $tamaño-col;
+                    width: $tamaño-col;
                 }
             }
         }
@@ -31,7 +31,7 @@
             @for $i from 1 through 12 {
                 $tamaño-col: calc(100% / 12) * $i;
                 .col-#{$size}-#{$i} {
-                    max-width: $tamaño-col;
+                    width: $tamaño-col;
                 }
             }
         }

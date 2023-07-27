@@ -1,0 +1,47 @@
+.shows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 1px;
+    margin: auto;
+
+    .shows__fechas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: solid 1px;
+
+        .fecha {
+            width: 200px;
+            margin: 0;
+            align-self: center;
+        }
+        
+        .lugar {
+            width: 300px;
+            margin: 0;
+            align-self: center;
+        }
+        
+        .btn-danger {
+            color: #BB1A1A;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .shows {
+        font-size: 15px;
+        .shows__fechas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .fecha, .lugar, .btn-danger {
+                margin: 0;
+            }
+        }
+    }
+}

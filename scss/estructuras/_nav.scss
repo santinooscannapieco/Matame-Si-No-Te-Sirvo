@@ -25,9 +25,10 @@
                 .nav__link {
                     text-decoration: none;
                     color: white;
-                }
-                .nav__link:hover {
-                    color: #BB1A1A;
+
+                    &:hover {
+                        color: #BB1A1A;
+                    }
                 }
             }
         }
@@ -100,7 +101,7 @@
 
                 .nav__responsive-li {
                     display: block;
-                    text-align: center;
+                    text-align: left;
                     margin: 0 10px;
                     padding: 10px;
                     border-bottom: 1px solid;
@@ -108,9 +109,10 @@
                     .nav__link {
                         text-decoration: none;
                         color: white;
-                    }
-                    .nav__link:hover {
-                        color: #BB1A1A;
+
+                        &:hover {
+                            color: #BB1A1A;
+                        }
                     }
                 }
             }
