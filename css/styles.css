@@ -233,11 +233,12 @@
   margin-right: 15px;
   margin-left: 15px;
   font-family: Montserrat, sans-serif;
+  font-weight: 400;
   color: #1D1D1B;
   font-size: 18px;
 }
 .container .container__info .tittle {
-  font-family: Montserrat black, sans-serif;
+  font-weight: 900;
   font-style: italic;
   color: #3C3C3B;
   font-size: 50px;
@@ -392,7 +393,8 @@
   background-color: #3C3C3B;
 }
 .navegador .nav {
-  font-family: Montserrat medium, sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
   font-size: 14pt;
 }
 .navegador .nav .nav__ul {

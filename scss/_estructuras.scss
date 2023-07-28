@@ -31,12 +31,14 @@
         margin-right: 15px;
         margin-left: 15px;
     
-        font-family: Montserrat, sans-serif;
+        font-family: $font-family;
+        font-weight: $font-weight-texto;
+
         color: #1D1D1B;
         font-size: 18px;
         
         .tittle {
-            font-family: Montserrat black, sans-serif;
+            font-weight: $font-weight-titulos;
             font-style: italic;
             color: #3C3C3B;
             font-size: 50px;

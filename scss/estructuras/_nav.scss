@@ -12,7 +12,8 @@
     background-color: $color-navegador;
 
     .nav {
-        font-family: $fuente-navegador;
+        font-family: $font-family;
+        font-weight: $font-weight-navegador;
         font-size: 14pt;
 
         .nav__ul {
@@ -24,7 +25,7 @@
 
                 .nav__link {
                     text-decoration: none;
-                    color: white;
+                    color: $color-btn-nav;
 
                     &:hover {
                         color: #BB1A1A;
@@ -84,7 +85,7 @@
                 display: block;
                 left: 0;
                 bottom: 0;
-                color: white;
+                color: $color-btn-nav;
                 margin: 0 10px;
             }
         
@@ -108,10 +109,10 @@
 
                     .nav__link {
                         text-decoration: none;
-                        color: white;
+                        color: $color-btn-nav;
 
                         &:hover {
-                            color: #BB1A1A;
+                            color: $rojo;
                         }
                     }
                 }
