@@ -2,21 +2,37 @@
     height: calc(100vh - 83px);
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .img-index {
-        width:500px;
-        height:500px;
+    .img-index-letras {
+        width: 540px;
+        height: 133px;
+        margin-bottom: 30px;
+    }
+    .img-index-corazon {
+        width: 540px;
+        height: 408px;
+
+        
+        animation-name: latido;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
     }
 }
 
 @media screen and (max-width: 992px) {
     .index {
         height: calc(100vh - 45px);
-        .img-index {
-            width:250px;
-            height:250px;
+        .img-index-letras {
+            width: 270px;
+            height: 67px;
+        }
+        .img-index-corazon {
+            width: 270px;
+            height: 204px;
         }
     }
     

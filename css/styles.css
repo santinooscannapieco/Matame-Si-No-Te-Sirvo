@@ -269,21 +269,35 @@
 .index {
   height: calc(100vh - 83px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.index .img-index {
-  width: 500px;
-  height: 500px;
+.index .img-index-letras {
+  width: 540px;
+  height: 133px;
+  margin-bottom: 30px;
+}
+.index .img-index-corazon {
+  width: 540px;
+  height: 408px;
+  animation-name: latido;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 
 @media screen and (max-width: 992px) {
   .index {
     height: calc(100vh - 45px);
   }
-  .index .img-index {
-    width: 250px;
-    height: 250px;
+  .index .img-index-letras {
+    width: 270px;
+    height: 67px;
+  }
+  .index .img-index-corazon {
+    width: 270px;
+    height: 204px;
   }
 }
 .info .info__banda {
@@ -481,6 +495,17 @@
   .navegador .nav #abrir-menu:checked ~ .nav__responsive-ul {
     bottom: 0;
     margin-bottom: 45px;
+  }
+}
+@keyframes latido {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 

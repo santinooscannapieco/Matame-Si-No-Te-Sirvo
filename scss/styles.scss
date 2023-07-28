@@ -9,4 +9,10 @@
 @import "fondo";
 @import "colores";
 @import "tipografia";
-@import "estructuras";
+@import "./estructuras/estructura-general";
+@import "./estructuras/index";
+@import "./estructuras/bio";
+@import "./estructuras/shows";
+@import "./estructuras/videos";
+@import "./estructuras/nav";
+@import "keyframes";
