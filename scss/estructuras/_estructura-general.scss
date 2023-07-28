@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 142px auto;
 
     grid-template-areas: 
         'header'
@@ -11,17 +11,26 @@
 
     .container__encabezado {
         grid-area: header;
-
+        margin-top: 20px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-    
-        margin-top: 20px;
-        margin-bottom: 20px;
 
-        .encabezado {
-            height: 100px;
+        .container__logo {
+            display: flex;
+            flex-direction: column;
             width: 100px;
+            .encabezado-letras {
+                width: 100px;
+                height: 25px;
+                margin-bottom: 2px;
+            }
+            .encabezado-corazon {
+                width: 100px;
+                height: 75px;
+                animation: latido 2s ease-in 0s infinite;
+            }
         }
     }
 
