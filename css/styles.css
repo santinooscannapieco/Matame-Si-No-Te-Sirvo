@@ -374,6 +374,7 @@
     text-align: center;
   }
   .shows .shows__fechas .fecha, .shows .shows__fechas .lugar, .shows .shows__fechas .btn-danger {
+    width: 300px;
     margin-top: 2px;
     margin-bottom: 2px;
   }
